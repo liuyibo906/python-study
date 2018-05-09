@@ -129,7 +129,22 @@ print('square root of 16 is',sqrt(16))
 
 ### 数据结构
 * python有4中内置的数据结构，list,tuple,dict,set
-
+* 列表list有许多方法，列表使用方括号
+```
+list1=[9,5,8,7]
+list1.append(9) #新增
+list1.sort() #排序
+len(list1) #list1的长度
+del list1[0] #删除元素
+```
+* 元组tuple,使用括号（括号可以没有），不可改变
+```
+zoo=('lion','shark','rabit')
+len(zoo) #长度
+如果元组中只包含一个元素需要如下方式定义
+number=(2,)
+```
+* 字典dict
 
 
 

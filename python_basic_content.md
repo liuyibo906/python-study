@@ -1,11 +1,9 @@
-#格式化字符串
+# 格式化字符串
 
 '''
-
 age=20                                          
 name='liuyb'                                       
 print('{} is {} years old'.format(name,age))  
-
 '''
 
 #小数点后保留6为小数

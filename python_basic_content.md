@@ -1,3 +1,5 @@
+# A byte of python note
+
 ### 格式化字符串
 ```
 age=20                                          
@@ -149,6 +151,9 @@ number=(2,)
 ab={'jack':'jack@fsc','rose':'rose@fsc','link':'link@fsc'}
 ab['hose']='hose@fsc' #添加键值
 del ab['jack'] #删除元素
+for i,j in ab.items():
+    print(i,j)
+
 ```
 
 

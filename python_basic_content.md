@@ -94,6 +94,26 @@ def say(message,times=1):
 say('liuyb')
 say('liuyb',5)
 
+#关键字参数
+def func(a,b=5,c=10):
+    print('a is', a,'b is',b,'c is',c)
+func(3,7)
+func(10,c=20)
+func(c=100,a=200)
+
+# 可变参数
+# *pare 标示元组 **para 代表字典
+# 调用total.__doc__ 显示行数说明文档
+def total(a,*numbers,**phonebook):
+'''
+this is a Docstring 
+'''
+    print('a is',a)
+    for member in numbers:
+        print('member is',member)
+    for first_part,second_part in phonebook.items():
+        print(first_part,second_part)
+total(10,1,2,3,jack=135,rose=125,kay=188)
 ```
 
 

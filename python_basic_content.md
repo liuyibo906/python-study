@@ -17,3 +17,61 @@ long story'
 * % 取余
  ### 控制流
  * if 语句
+```
+number=10
+guess=int(input('please input a number'))
+if guess==number:
+    print('correct')
+elif guess<number:
+    print('too little')
+else:
+    print('too large')
+print('done')
+```
+* while 语句
+```
+number=10
+count=0
+while True:
+    count+=1
+    print('this is the',count ,'times')
+    guess=int(input('please input a number'))
+    if guess==number:
+        print('correct')
+        break
+    elif guess<number:
+        print('too little')
+    else:
+        print('too large')
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

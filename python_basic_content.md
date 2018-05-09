@@ -117,6 +117,16 @@ total(10,1,2,3,jack=135,rose=125,kay=188)
 ```
 
 ### 模块
+```
+import sys
+print('The command line arguments are:')
+print( sys.path)
+#导入模块中一个函数
+from math import sqrt
+print('square root of 16 is',sqrt(16))
+```
+#### dir函数，返回对象定义的名称列表，如果对象为模块，则返回这一指定模块的名称列表，如果没有指定参数，则返回当前模块的名称列表。
+
 
 
 

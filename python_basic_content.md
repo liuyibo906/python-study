@@ -67,6 +67,33 @@ def max(a,b):
     else:
         print(b)
 max(23,8)
+
+#局部变量
+x=5
+def fun(x):
+    print('x is',x)
+    x=2
+    print('change x to',x )
+fun(5)
+print('now x is',x)
+
+
+#globle 语句
+x=5
+def fun():
+    global x
+    print('x is',x)
+    x=2
+    print('change x to',x )
+fun()
+print('now x is',x)
+
+#默认参数
+def say(message,times=1):
+    print(message*times)
+say('liuyb')
+say('liuyb',5)
+
 ```
 
 

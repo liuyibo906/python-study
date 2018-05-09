@@ -54,14 +54,20 @@ while True:
     else:
         print('too large')
 ```
-* 函数
+### 函数
 ```
+#无参数函数
 def sayhello():
     print('hello world')
 sayhello()
+#带参数函数
+def max(a,b):
+    if a>=b:
+        print(a)
+    else:
+        print(b)
+max(23,8)
 ```
-
-
 
 
 

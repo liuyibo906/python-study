@@ -144,7 +144,12 @@ len(zoo) #长度
 如果元组中只包含一个元素需要如下方式定义
 number=(2,)
 ```
-* 字典dict
+* 字典dict,键值之间通过冒号间隔，每一对键值之间通过逗号间隔，使用花括号包括，字典键不能重复，字典不能排序。
+```
+ab={'jack':'jack@fsc','rose':'rose@fsc','link':'link@fsc'}
+ab['hose']='hose@fsc' #添加键值
+del ab['jack'] #删除元素
+```
 
 
 

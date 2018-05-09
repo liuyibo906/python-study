@@ -157,7 +157,20 @@ for i,j in ab.items():
 ```
 
 
-
+* 序列（sequence） 列表、元组和字符串可以看做是序列的某种表现形式，序列的主要功能是资格测试（in 或not in）和索引操作，拥有切片计算符
+```
+shoplist = ['apple', 'mango', 'carrot', 'banana']
+shoplist[1:3] #索引从0开始，不包含end数字
+shoplist[:2:1] #start:end:sep  步长
+```
+* 集合（set） 集合的内容是不重复的
+```
+shoplist = ['apple', 'mango', 'carrot', 'banana']
+set1=set(shoplist)
+set1.remove('apple') #去除元素
+set1.add('dog') #添加元素
+set2.issuperset(set1) #set2是否包含set1
+```
 
 
 

@@ -11,11 +11,4 @@ print(r'this's a new message')
 #如果一个字符串很长，可以使用\来换行
 s='this is a very \
 long story'
-
-
-
-
-
-
-
 '''

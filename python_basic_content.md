@@ -44,7 +44,10 @@ while True:
     else:
         print('too large')
 ```
-
+* 函数
+def sayhello():
+    print('hello world')
+sayhello()
 
 
 

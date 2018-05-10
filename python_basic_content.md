@@ -286,6 +286,43 @@ Robot.how_many()
 * 继承（inheritance） 面向对象编程的一大优点是对代码的重用（Reuse），重用的一种实现方法就是通过继承（Inheritance）机制。继承最好是想象成在类之间实类型与子类型（Type and Subtype）关系的工具.
 * SchoolMember 类会被称作基类（Base Class） 或是超类（Superclass）。 Teacher 和 Student 类会被称作派生类（Derived Classes） 或是子类（Subclass）。
 
+* 要想使用继承，在定义类时我们需要在类后面跟一个包含基类名称的元组
+* 我们可以通过在方法名前面加上基类名作为前缀，再传入 self 和其余变量，来调用基类的方法
+
+```
+class schoolmember:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+        print('initial schoolmember:{}'.format(self.name))
+    def tell(self):
+        print('name:{} age:{}'.format(self.name,self.age),end=' ')
+class teacher(schoolmember):
+    def __init__(self,name,age,salary):
+        schoolmember.__init__(self,name,age)
+        self.salary=salary
+        print('initial teacher:{}'.format(self.name))
+    def tell(self):
+        schoolmember.tell(self)
+        print('salary:{}'.format(self.salary))
+class student(schoolmember):
+    def __init__(self,name,age,mark):
+        schoolmember.__init__(self,name,age)
+        self.mark=mark
+        print('initial student:{}'.format(self.name) )
+    def tell(self):
+        schoolmember.tell(self)
+        print('mark:{}'.format(self.mark))
+
+m=teacher('wangzl',20,5000)
+n=student('zhouyan',22,100)
+print()
+member=[m,n]
+for i in member:
+    i.tell()
+```
+
+
 
 
 

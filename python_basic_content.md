@@ -215,7 +215,14 @@ print(p)
 ```
 
 
-
+* 方法 类和对象如函数一样可以有方法，唯一的不同是类方法必须有self参数
+```
+class Person:
+    def sayhi(self):
+        print('hello world')
+p = Person()
+p.sayhi()
+```
 
 
 

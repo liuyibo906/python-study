@@ -325,7 +325,19 @@ for i in member:
 
 ### 输入与输出
 
+* input实现输入，print实现输出
+```
+def reverse(a):
+    return(a[::-1])
+def is_para(a):
+    return a.replace(' ','')==reverse(a).replace(' ','')
 
+something=input('please input something:')
+if is_para(something):
+    print(something,'is para')
+else:
+    print(something,'is not para')
+```
 
 
 

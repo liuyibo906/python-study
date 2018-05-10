@@ -206,9 +206,13 @@ backup()
 ### 面向对象编程
 * 类(class),类方法和普通函数的区别是，类方法必须要有一个self参数在参数列表开头，但是在调用是不用为他赋值，python会为他提供
 * python为self变量赋值的过程：myclass类的实例myobject调用类方法myobject.method(arg1,arg2) python 会自动转换为myclass.method(myobject,arg1,age2)
-* 用class关键字和类的名称来创建类，在他之后是一个缩进的语句块，代表这个类的主体。
-
-
+* 用class关键字和类的名称来创建类，在他之后是一个缩进的语句块，代表这个类的主体，用类名加一个括号创建一个类的实例（或对象）
+```
+class Person:
+    pass # 一个空的代码块
+p = Person()
+print(p)
+```
 
 
 

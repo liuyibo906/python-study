@@ -283,7 +283,8 @@ droid2.die()
 Robot.how_many()
 ```
 
-
+* 继承（inheritance） 面向对象编程的一大优点是对代码的重用（Reuse），重用的一种实现方法就是通过继承（Inheritance）机制。继承最好是想象成在类之间实类型与子类型（Type and Subtype）关系的工具.
+* SchoolMember 类会被称作基类（Base Class） 或是超类（Superclass）。 Teacher 和 Student 类会被称作派生类（Derived Classes） 或是子类（Subclass）。
 
 
 

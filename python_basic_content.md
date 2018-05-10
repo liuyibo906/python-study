@@ -176,21 +176,27 @@ set2.issuperset(set1) #set2是否包含set1
 ### 自动备份目录
 ```
 def backup():
+    import time
+    import os
     source = ['E:\\t2', 'E:\\t3']
     print(' '.join(source))
     target_dir = 'E:\\Backup'
-    import os
-    print(os.sep)
-    import time
-    target=target_dir + os.sep+time.strftime('%Y%m%d%H%M%S')+'.zip'
-
     if not os.path.exists(target_dir):
         os.mkdir(target_dir)
+    today=target_dir+os.sep+time.strftime('%Y%m%d')
+    now=time.strftime('%H%M%S')
+    comment=input('please input the change:')
+    if len(comment)==0:
+        target=today+os.sep+now+'.zip'
+    else:
+        target=today+os.sep+now+comment.replace(' ','_')+'.zip'
+    if not os.path.exists(today):
+        os.mkdir(today)
     zip_command = 'zip -r {0} {1}'.format(target,
     ' '.join(source))
     print(zip_command)
     if os.system(zip_command)==0:
-        print('successful backup to', target_dir)
+        print('successful backup to', target)
     else:
         print('backup failed')
 

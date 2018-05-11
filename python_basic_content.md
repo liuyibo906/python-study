@@ -402,4 +402,24 @@ else:
 ```
 
 * 抛出异常 使用raise语句抛出异常，异常必须是直接或间接从属Exception类的派生类
+```
+# 定义一个异常
+class ShortinputExcepiton(Exception):
+    def __init__(self,lenth,aleast):
+        Exception.__init__(self)
+        self.lenth=lenth
+        self.aleast=aleast
+try:
+    text=input('please input someting:')
+    if len(text)<3:
+    #抛出异常
+        raise ShortinputExcepiton(len(text),3)
+except EOFError:
+    print('eoferror')
+except ShortinputExcepiton as t:
+    print('input {0} was {1} le nth,except {2} lenth'.format(text,t.lenth,t.aleast))
+else:
+    print('input was',text)
+
+```
 

@@ -377,4 +377,15 @@ f=open(shoplistdate,'rb')
 storelist=pickle.load(f)
 print(storelist)
 ```
+### unicode
+```
+import io
+f=io.open('abc.txt','wt',encoding="UTF_8")
+f.write('Imagine non-English language here')
+f.close()
+
+text=io.open('abc.txt',encoding="UTF_8").read()
+print(text)
+```
+
 

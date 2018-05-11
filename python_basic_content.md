@@ -339,7 +339,42 @@ else:
     print(something,'is not para')
 ```
 
+### 文件
+* 文件可以操作open('文件名','wbtar'),read,readline,close
 
+```
+pemp=''' 江南佳丽地，金陵帝王州。
+逶迤带绿水，迢递起朱楼。
+飞甍夹驰道，垂杨荫御沟。
+凝笳翼高盖，叠鼓送华辀。
+献纳云台表，功名良可收。 
+'''
+f=open('d.txt','a')
+f.write(pemp)
+f.close()
 
+f=open('d.txt')
+while True:
+    line=f.readline()
+    if len(line)==0:
+        break
+    print(line)
+f.close()
+```
 
+### pickle模块
+* 将python对象存储到一个文件中，之后取出，这叫持续存储对象
+```
+import pickle
+shoplistdate='shoplist.data'
+shoplist=['mango','cara','beef']
+f=open(shoplistdate,'wb')
+pickle.dump(shoplist,f)
+f.close()
+
+del shoplist
+f=open(shoplistdate,'rb')
+storelist=pickle.load(f)
+print(storelist)
+```
 

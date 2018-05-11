@@ -388,4 +388,18 @@ text=io.open('abc.txt',encoding="UTF_8").read()
 print(text)
 ```
 
+### 异常处理
+* 我们可以使用try...except 来处理异常，一般俩说我们将通常的语句放在try语句中，将我们错误处理器代码放在except代码块中
+```
+try:
+    text=input('plese input somthine:')
+except EOFError:
+    print('Why did you do an EOF on me?')
+except KeyboardInterrupt:
+    print('why did you do an interrupt')
+else:
+    print('you have input {}'.format(text))
+```
+
+* 抛出异常 使用raise语句抛出异常，异常必须是直接或间接从属Exception类的派生类
 

@@ -30,6 +30,8 @@ long story'
 
 * 1 < 2 < 3 #=> True
 * 2 < 3 < 2 #=> False
+
+*  None、0 以及空字符串和空列表都等于 False，除此以外的所有值都等于 True。
  ### 控制流
 
 

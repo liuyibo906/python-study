@@ -485,3 +485,14 @@ def powersum(power,*arg):
 
 print(powersum(2,3,4))
 ```
+### asert语句
+* 断言，如果assert断言失败，则返回AssertionError错误
+```
+list1=[1]
+assert len(list1)==1
+assert len(list1)==2
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+AssertionError
+
+```

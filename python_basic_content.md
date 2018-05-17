@@ -440,4 +440,28 @@ a,b=b,a
 print(a,b)
 
 ```
+### lambda表达式
+* lambda 语句可以创建一个新的函数对象。从本质上说， lambda 需要一个参数，后跟一个表
+* 达式作为函数体，这一表达式执行的值将作为这个新函数的返回值。
+* key -- 主要是用来进行比较的元素，只有一个参数，具体的函数的参数就是取自于可迭代对象中，指定可迭代对象中的一个元素来进行排序。
+```
+points = [{'x': 2, 'y': 3},{'x': 4, 'y': 1}]
+points.sort(key=lambda i: i['y'])
+print(points)
 
+
+
+def takeSecond(elem):
+    return elem[1]
+
+# 列表
+random = [(2, 2), (3, 4), (4, 1), (1, 3)]
+
+#方法一
+random.sort(key=lambda i:i[1])
+print(random)
+
+# 方法二 指定第二个元素排序
+random.sort(key=takeSecond)
+print(random)
+```

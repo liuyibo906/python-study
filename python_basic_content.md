@@ -423,3 +423,21 @@ else:
 
 ```
 ### try...final
+
+
+### 传递元组
+* 如果需要函数返回两个值，只需要用一个元组就可
+```
+def get_error_detail():
+    return(2,'detail')
+a,b=get_error_detail()
+print(a,b)
+
+#交换两个值最快的方法是传递元组
+a=3
+b=4
+a,b=b,a
+print(a,b)
+
+```
+

@@ -465,3 +465,10 @@ print(random)
 random.sort(key=takeSecond)
 print(random)
 ```
+### 列表推导
+* 从一个列表中得到另一个列表
+```
+list1=[1,2,3,4]
+list2=[2*i for i in list1 if i>=3]
+print(list2)
+```

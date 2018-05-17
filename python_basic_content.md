@@ -472,3 +472,16 @@ list1=[1,2,3,4]
 list2=[2*i for i in list1 if i>=3]
 print(list2)
 ```
+
+
+### 函数中接收元组和字典
+### 函数中接收元组和字典
+```
+def powersum(power,*arg):
+    total=0
+    for i in arg:
+        total+=i**power
+    return total
+
+print(powersum(2,3,4))
+```

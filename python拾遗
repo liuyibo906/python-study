@@ -15,3 +15,18 @@ def is_funny(s):
     return re.match('done|quit',s)!=None
 
 print(is_funny('done'))
+
+
+格式化字符串
+a,b,c='cat',3.14,6
+s='there \'s %d%ss old than %.2f years' %(c,a,b)
+
+there's 6 cats older than 3.14 years
+
+os 模块
+import os
+os.getcwd()  当前工作目录
+os.listdir(p) 目录p下的文件和文件夹列表
+os.chdir(p) 切换当前工作路径到p
+os.path.isfile(p) 当p指定的是一个文件时返回True 否则返回False
+os.path.isdir(p) 当p指定的是一个文件夹时返回True 否则返回False

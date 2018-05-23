@@ -1,2 +1,17 @@
 ord('a')  获取a的字符编码
 chr(97) 获取97对应的字符
+
+正则表达式
+# 导入正则表达式
+import re 
+xy?   x,xy
+x|y  x,y
+x*   '',x,xx,xxx ...
+x+   x,xx,xxx ...
+
+import re
+def is_funny(s):
+#不匹配则返回None
+    return re.match('done|quit',s)!=None
+
+print(is_funny('done'))
